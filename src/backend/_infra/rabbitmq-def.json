@@ -1,0 +1,50 @@
+{
+  "vhosts": [
+    { "name": "/" },
+    { "name": "broker.app1" }
+  ],
+  "users": [
+    {
+      "name": "app1_user",
+      "password": "app123Pass",
+      "tags": ""
+    },
+    {
+      "name": "guest",
+      "password": "guest",
+      "tags": "administrator"
+    }
+  ],
+  "permissions": [
+    {
+      "user": "app1_user",
+      "vhost": "broker.app1",
+      "configure": "",
+      "write": "",
+      "read": ".*"
+    },
+    {
+      "user": "guest",
+      "vhost": "broker.app1",
+      "configure": ".*",
+      "write": ".*",
+      "read": ".*"
+    },
+    {
+      "user": "guest",
+      "vhost": "/",
+      "configure": ".*",
+      "write": ".*",
+      "read": ".*"
+    }
+  ],
+  "queues": [
+    {
+      "name": "app1.queue.nft",
+      "vhost": "broker.app1",
+      "durable": true,
+      "auto_delete": false,
+      "arguments": {}
+    }
+  ]
+}

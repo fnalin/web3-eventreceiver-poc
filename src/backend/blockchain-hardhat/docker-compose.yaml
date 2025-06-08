@@ -1,0 +1,12 @@
+name: event_receiver
+
+services:
+  er.blockchain:
+    build:
+      context: .
+    container_name: er.blockchain
+    ports:
+      - "8545:8545"
+    volumes:
+      - .:/app
+    command: sh -c "npx hardhat node & sleep 5 && scripts/auto-deploy.sh && tail -f /dev/null"

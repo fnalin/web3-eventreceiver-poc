@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "event_receiver", "event_receiver", "{02CB1D2D-F223-42E5-A868-85A485C982CD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fansoft.EventReceiver.Api", "event_receiver\Fansoft.EventReceiver.Api\Fansoft.EventReceiver.Api.csproj", "{67475DD1-DB48-4DFA-9B72-2988C511A3BB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "blockchain_scout", "blockchain_scout", "{425E894A-A26C-424F-AB88-06BCFA517943}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fansoft.Blockchain.Scout.Api", "blockchain_scout\Fansoft.Blockchain.Scout.Api\Fansoft.Blockchain.Scout.Api.csproj", "{63C8FFA7-0680-4BB7-ABB6-4A654B004ECC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "digital_twin", "digital_twin", "{76B1EBF6-A13A-4333-AB05-7E3F6881BFAF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fansoft.DigitalTwin.Api", "digital_twin\Fansoft.DigitalTwin.Api\Fansoft.DigitalTwin.Api.csproj", "{0BAABF76-EE7B-438D-8298-51E18F807684}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_infra", "_infra", "{8E5A4368-813B-4093-A1DA-F9290F765F1E}"
+	ProjectSection(SolutionItems) = preProject
+		_infra\docker-compose.yaml = _infra\docker-compose.yaml
+		_infra\rabbitmq-def.json = _infra\rabbitmq-def.json
+		_infra\rabbitmq.conf = _infra\rabbitmq.conf
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "app_provider", "app_provider", "{CDB068FD-37D5-4E17-8E46-644B08DA4E9D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fansoft.AppProvider.Api", "app_provider\Fansoft.AppProvider.Api\Fansoft.AppProvider.Api.csproj", "{63C14897-AD47-457B-8EDD-66429EF74220}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{67475DD1-DB48-4DFA-9B72-2988C511A3BB} = {02CB1D2D-F223-42E5-A868-85A485C982CD}
+		{63C8FFA7-0680-4BB7-ABB6-4A654B004ECC} = {425E894A-A26C-424F-AB88-06BCFA517943}
+		{0BAABF76-EE7B-438D-8298-51E18F807684} = {76B1EBF6-A13A-4333-AB05-7E3F6881BFAF}
+		{63C14897-AD47-457B-8EDD-66429EF74220} = {CDB068FD-37D5-4E17-8E46-644B08DA4E9D}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{67475DD1-DB48-4DFA-9B72-2988C511A3BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67475DD1-DB48-4DFA-9B72-2988C511A3BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67475DD1-DB48-4DFA-9B72-2988C511A3BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67475DD1-DB48-4DFA-9B72-2988C511A3BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63C8FFA7-0680-4BB7-ABB6-4A654B004ECC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63C8FFA7-0680-4BB7-ABB6-4A654B004ECC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63C8FFA7-0680-4BB7-ABB6-4A654B004ECC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63C8FFA7-0680-4BB7-ABB6-4A654B004ECC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0BAABF76-EE7B-438D-8298-51E18F807684}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0BAABF76-EE7B-438D-8298-51E18F807684}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0BAABF76-EE7B-438D-8298-51E18F807684}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0BAABF76-EE7B-438D-8298-51E18F807684}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63C14897-AD47-457B-8EDD-66429EF74220}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63C14897-AD47-457B-8EDD-66429EF74220}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63C14897-AD47-457B-8EDD-66429EF74220}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63C14897-AD47-457B-8EDD-66429EF74220}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
