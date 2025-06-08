@@ -45,7 +45,7 @@ web3-eventreceiver-poc/
 
 ## 🔁 Fluxo da Aplicação
 
-> ![Arquitetura](docs/arquitetura.png)
+> ![Arquitetura](docs/events-arquitetura.png)
 
 1. 🛰 **Digital Twin** envia evento para a blockchain.
 2. ⚙️ **Contrato inteligente** emite um evento (`EventCreated`).
@@ -65,7 +65,6 @@ cd web3-eventreceiver-poc
 cd src/backend/_infra
 docker-compose up --build
 
-![Arquitetura](docs/arquitetura.png)
 
 🧪 Testes (em construção)
 	•	Testar recebimento e persistência dos eventos
